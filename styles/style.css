@@ -135,3 +135,8 @@ textarea {
         width: 100%;
     }
 }
+/* checkout page section - making the footer sit at the bottom */
+.checkout-bg{
+    background: url(https://i.postimg.cc/tC519WHj/cal-bg-darkplant.webp);
+    margin-bottom: 300px;
+}
