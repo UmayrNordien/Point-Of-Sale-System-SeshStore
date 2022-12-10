@@ -112,21 +112,7 @@ textarea {
 
 /* PRODUCT CARD RESPONSIVENESS */
 @media screen and (max-width: 720px) {
-    #landing {
-        width: 100%;
-        text-align: center;
-    }
-
-    #heading {
-        width: 100%;
-        text-align: center;
-    }
-
-    tr {
-        width: 100%;
-    }
-
-    table {
+    .table {
         width: 100%;
     }
 }
