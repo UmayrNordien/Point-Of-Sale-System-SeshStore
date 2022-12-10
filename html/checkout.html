@@ -13,62 +13,67 @@
   <!--GOOGLE FONT-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Pathway+Gothic+One&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Pathway+Gothic+One&family=Sedgwick+Ave+Display&display=swap"
+    rel="stylesheet">
   <title>▄▀▄▀▄ sesh store ▀▄▀▄▀▄</title>
 </head>
 
 <body>
   <section>
     <nav class="navbar navbar-expand-lg  sticky-top  navbar-custom">
-    
+
       <div class="container-fluid">
-          <!--LOGO IMAGE-->
-  
-          <a class="navbar-brand" href="#">
-              <img src="https://i.postimg.cc/HL6qqMXg/CSG099.png" width="100px" height="100px" alt="logo" class="logo">
-          </a>
-  
-          <div>
-              <!--COLLAPSE BUTTON-->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto gap-5 text-black">
-  
-                  <!--MENU LIST-->
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html"><i class="fa-solid fa-house"></i>
-                          <span>Home</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" id="product-section" href="../index.html#products-section2"><i class="fa-solid fa-user"></i>
-                          <span>Products</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/html/checkout.html"><i
-                              class="fa-sharp fa-solid fa-folder-open"></i>
-                          <span>Checkout</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/html/admin.html"><i class="fa-solid fa-wrench"></i>
-                          <span>Admin</span></a>
-                  </li>
-                  </li>
-              </ul>
-          </div>
+        <!--LOGO IMAGE-->
+
+        <a class="navbar-brand" href="#">
+          <img src="https://i.postimg.cc/HL6qqMXg/CSG099.png" width="100px" height="100px" alt="logo" class="logo">
+        </a>
+
+        <div>
+          <!--COLLAPSE BUTTON-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto gap-5 text-black">
+
+            <!--MENU LIST-->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html"><i class="fa-solid fa-house"></i>
+                <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" id="product-section"
+                href="../index.html#products-section2"><i class="fa-solid fa-user"></i>
+                <span>Products</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/html/checkout.html"><i
+                  class="fa-sharp fa-solid fa-folder-open"></i>
+                <span>Checkout</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/html/admin.html"><i class="fa-solid fa-wrench"></i>
+                <span>Admin</span></a>
+            </li>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
   </section>
 
   <main>
     <section id="checkout">
       <div class="table container-fluid">
         <div class="table-responsive-sm px-3">
+          <!--REMOVE SCROLLBARS so that the user cannot scale the page on mobile-->
+          <scrolling=no>
           <table class="table text-black bg-light">
             <thead>
               <tr>
@@ -85,6 +90,7 @@
             <tbody id="tbody">
             </tbody>
           </table>
+        </scrolling>
         </div>
       </div>
     </section>
