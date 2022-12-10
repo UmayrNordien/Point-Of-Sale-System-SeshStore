@@ -57,8 +57,10 @@ function productInfo() {
   tbody.innerHTML = "",   //targets values within quotations in the array
     Object.keys(products).forEach((collection) => {
       //loops until all properties have been displayed in the array 
-      tbody.innerHTML += `
-  <div class="table-respn">                                                                         
+      tbody.innerHTML += 
+      //added a div class for the table to decrease font siz e in attempt to make the table more responsive
+  `                                                                            
+  <div class="table-respn">                                                                                                                
   <td>${products[collection].productName}</td>
   <td>${products[collection].size}</td>
   <td>${products[collection].price}</td>
@@ -90,27 +92,29 @@ localStorage.setItem('collection', JSON.stringify(products));
 
 
 
-//ADDING NEW PRODUCTS (NOT WORKING)
-// let create = document.querySelector('#createNew');
-// create.addEventListener('click', (e) => {
-//   e.preventDefault();                                     //prevents page from reloading
-//   let productName = document.querySelector('#product').value;
-//   let size = document.querySelector('#size').value;
-//   let price = document.querySelector('#price').value;
-//   let image = document.querySelector('#image').value;
-//   products.push(                                          //adds new items to the end of the array, changes length of array 
-//     {
-//       productName,
-//       size,
-//       price,
-//       image
-//     }
-//   )
-//   /* ADDED A ALERT IF THE EVENT HAPPENS */
-//   alert('Product added to collection')
-//   localStorage.setItem('collection', JSON.stringify(products));//takes a JavaScript object and transforms it into a JSON string
-//   productData();                                            //newly created products added to local storage
-// })
+//ADDING NEW PRODUCTS (doesn't display in the checkout table but adds to the array)
+let create = document.querySelector('#createNew');
+create.addEventListener('click', (e) => {
+  e.preventDefault(); //to prevent the browser from executing the default action of the selected element
+                                      
+  let productName = document.querySelector('#product').value;
+  let size = document.querySelector('#size').value;
+  let price = document.querySelector('#price').value;
+  let image = document.querySelector('#image').value;
+
+  products.push(                                          //adds new items to the end of the array, changes length of array 
+    {
+      productName,
+      size,
+      price,
+      image
+    }
+  )
+  /* ADDED A ALERT IF THE EVENT HAPPENS */
+  alert('Product added to the collection')
+  localStorage.setItem('collection', JSON.stringify(products));//takes a JavaScript object and transforms it into a JSON string
+  productData();                                            //newly created products added to local storage
+})
 
 
 
