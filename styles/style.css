@@ -1,0 +1,89 @@
+.section-style {
+    /* adjusted height to prevent unwanted scrolling */
+    height: 90vh;
+    background: url(https://i.postimg.cc/ncNF7fQ0/seshdesktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* COPYRIGHT SECTION */
+footer {
+    text-align: center;
+    background-color: none;
+    /* provide a transparent look */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* #landing>h2 {
+    font-size: 100px;
+    padding-top: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#landing>p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+} */
+
+.card {
+    background-color: transparent;
+    outline: black 20px;
+}
+
+.card-text {
+    color: rgb(255, 255, 255);
+}
+
+/* FILTER DROPDOWN BUTTON */
+.dropdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px
+}
+
+.table {
+    width: 100%;
+}
+
+.Modal {
+    margin-left: auto;
+}
+
+#btnSort {
+    display: flex;
+    justify-content: center;
+}
+
+/* PRODUCT CARD RESPONSIVENESS */
+@media screen and (max-width: 720px) {
+    #produce {
+        width: 100%;
+        text-align: center;
+    }
+
+    #landing {
+        width: 100%;
+        text-align: center;
+    }
+
+    #heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    tr {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
