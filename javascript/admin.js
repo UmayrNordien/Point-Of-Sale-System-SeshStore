@@ -51,21 +51,25 @@ let products = JSON.parse(localStorage.getItem('collection')) ?    //    TERNARY
   },
   ];
 
+//PRODUCT INFO DISPLAYED IN A TABLE FORMAT ON checkout.html 
 function productInfo() {
   let tbody = document.querySelector("#tbody");
   tbody.innerHTML = "",   //targets values within quotations in the array
     Object.keys(products).forEach((collection) => {
-      tbody.innerHTML +=                                          //loops until all properties have been displayed in the array
-        `
+      //loops until all properties have been displayed in the array 
+      tbody.innerHTML += `
+  <div class="table-respn">                                                                         
   <td>${products[collection].productName}</td>
   <td>${products[collection].size}</td>
   <td>${products[collection].price}</td>
   <td><button id="edit" onclick="edit()" class="btn btn-success">⌨</button></td>
   <td><button class="btn btn-dark" id="remove" onclick="remove(${products[collection].index})">⌫</button></td>
+  </div>
 `
     },
     )
-}
+};
+
 productInfo();      //calls the function and pushes it within the index.html tbody tag
 
 

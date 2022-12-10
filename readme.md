@@ -1,6 +1,6 @@
 <!--
 Note: 
--In order for changes to be reflected,you have to delete cookies and reset site permissions on each page link 
+-In order for changes to be reflected,you have to delete cookies on the admin page then refresh 
 -The delete button only works when the page is refreshed and the changes will then be reflected on the checkout and product section
 -The delete button doesn't delete the exact elements in the array
 -->

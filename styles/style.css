@@ -1,3 +1,24 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Caveat', cursive;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 14px;
+    letter-spacing: 1.25px;      /* spacing the letters because the font is quite tight */
+
+}
+
+@media screen and (max-width:576px) {
+    body{
+        font-size: 9px !important;
+    }
+}
+
 .section-style {
     /* adjusted height to prevent unwanted scrolling */
     height: 90vh;
@@ -9,6 +30,12 @@
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
+}
+.section-button{
+    text-align: center;
+}
+.section-position{
+    padding-top:40vh;
 }
 
 /* COPYRIGHT SECTION */
@@ -53,8 +80,29 @@ footer {
     width: 100%;
 }
 
+/* ADD NEW PRODUCT MODAL */
 .Modal {
-    margin-left: auto;
+    margin-left: 3.5vh;
+    margin-bottom: 50px;
+    display: flex-start;
+
+}
+
+.form-control{
+    background-color: rgba(41, 154, 41, 0.253);
+}
+
+/* trying to mke the table responsive less than 369 pc by decreasing the font size on the table */
+@media screen and (max-width: 369px) {
+    .table-respn{
+        font-size: 9px
+    }
+}
+
+
+input,
+textarea {
+    background-color: rgba(0, 128, 0, 0.1);
 }
 
 #btnSort {
