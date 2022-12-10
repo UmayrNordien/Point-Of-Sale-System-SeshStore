@@ -1,9 +1,8 @@
 <!--
 Note: 
--In order for changes to be reflected,you have to delete cookies on the admin page then refresh 
--The delete button only works when the page is refreshed and the changes will then be reflected on the checkout and product section
--The delete button doesn't delete the exact elements in the array
--if the products aren't loading immediately, navigate to admin page and refresh then navigate to home again and it will display
+-In order for products to be displayed, navigate to admin page then back to home 
+-The delete button works but doesn't show that the item is removed in the admin table
+-The delete button doesn't delete the exact elements in the array, only from the last up
 -->
 
 <!--
